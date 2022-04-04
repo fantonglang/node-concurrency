@@ -1,0 +1,29 @@
+{
+  "name": "node-concurrency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "scripts": {
+    "config": "node-gyp configure && node-gyp build",
+    "build": "rollup -c"
+  },
+  "files": [
+    "lib",
+    "build",
+    "package.json"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^9.2.2",
+    "node-gyp": "^9.0.0",
+    "rollup": "^2.70.1",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "nan": "^2.15.0"
+  }
+}
